@@ -12,14 +12,14 @@ public class Ex8 {
             System.out.println("The person is going to pay " + (sum + vat) + " dollars");
         }
         else
-            if(am>180 && am<=1000)
+            if(am>180 && am<1000)
             {
                 double sum = 180 * 0.7 + (am - 180) * 0.9;
                 double vat = sum * 17 / 100;
                 System.out.println("The person is going to pay " + (sum + vat) + " dollars");
             }
             else
-                if(am>1000)
+                if(am>=1000)
                 {
                     double sum = 180 * 0.7 + (am - 180) * 0.9;
                     sum=sum+sum*10/100;

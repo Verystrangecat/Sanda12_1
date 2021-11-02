@@ -8,7 +8,7 @@ public class Art {
             int used,sum = 0, sumhelp = 0;
             System.out.println("enter how much used");
             used = input.nextInt();
-            if (used<180)
+            if (used<=180)
                 sum = used*70;
             else if (1000>used && used>180) {
                 sumhelp = used - 180;
@@ -24,3 +24,4 @@ public class Art {
         }
     }
 
+//КОД АРТЕМА. ARTEM'S CODE
