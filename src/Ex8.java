@@ -7,24 +7,30 @@ public class Ex8 {
         double am=input.nextDouble();
         if(am<=180)
         {
-            double sum = am * 0.7;
-            double vat = sum * 17 / 100;
-            System.out.println("The person is going to pay " + (sum + vat) + " dollars");
+            double sum = am * 70;
+            sum =(sum+ sum * 17 / 100);
+            int d= (int) sum/100;
+            int c= (int) (sum%100);
+            System.out.println("The person is going to pay " +d+"."+c+ " dollars");
         }
         else
             if(am>180 && am<1000)
             {
-                double sum = 180 * 0.7 + (am - 180) * 0.9;
-                double vat = sum * 17 / 100;
-                System.out.println("The person is going to pay " + (sum + vat) + " dollars");
+                double sum = 180 * 70 + (am - 180) * 90;
+                sum =(sum+ sum * 17 / 100);
+                int d= (int) sum/100;
+                int c= (int) (sum%100);
+                System.out.println("The person is going to pay " +d+"."+c+ " dollars");
             }
             else
                 if(am>=1000)
                 {
-                    double sum = 180 * 0.7 + (am - 180) * 0.9;
+                    double sum = 180 * 70 + (am - 180) * 90;
                     sum=sum+sum*10/100;
-                    sum =sum+ sum*17/100;
-                    System.out.println("The person is going to pay " + sum + " dollars");
+                    sum =(sum+ sum*17/100);
+                    int d= (int) sum/100;
+                    int c= (int) (sum%100);
+                    System.out.println("The person is going to pay " +d+"."+c+ " dollars");
                 }
     }
 }
